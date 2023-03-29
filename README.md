@@ -1,5 +1,7 @@
 # Arduino-Temp-Humidity-Sensor
 
+![temp](https://user-images.githubusercontent.com/102630199/228667051-57312b82-f4bf-4b89-b1c3-980dafaa0428.jpg)
+
 This project aims to use the Arduino Nano 33 BLE Sense board to measure and print out the humidity and temperature values of your surroundings in real time. This is made possible by the embedded HTS221 sensor. 
 
 Goals and objectives
