@@ -1,60 +1,50 @@
-# Arduino-Temp-Humidity-Sensor
+# Arduino Temperature and Humidity Sensor
 
-![temp](https://user-images.githubusercontent.com/102630199/228667051-57312b82-f4bf-4b89-b1c3-980dafaa0428.jpg)
+![Temperature and Humidity Sensor](https://user-images.githubusercontent.com/102630199/228667051-57312b82-f4bf-4b89-b1c3-980dafaa0428.jpg)
 
-This project aims to use the Arduino Nano 33 BLE Sense board to measure and print out the humidity and temperature values of your surroundings in real time. This is made possible by the embedded HTS221 sensor. 
+## Project Overview
 
-Goals and objectives
+This project utilizes the Arduino Nano 33 BLE Sense board and the embedded HTS221 sensor to measure and display real-time temperature and humidity values. The primary goal is to familiarize users with reading raw sensor data, utilizing the HTS221 library, and printing sensor values in the Serial Monitor.
 
-•	Learn how to output raw sensor data from the Arduino Nano 33 BLE Sense.
-•	Use the HTS221 library.
-•	Print temperature and humidity values in the Serial Monitor when they are within a certain range. 
-•	Create your own temperature and humidity monitor.
+## Goals and Objectives
 
-Hardware and Software Required
+- Learn how to output raw sensor data from the Arduino Nano 33 BLE Sense.
+- Utilize the HTS221 library for temperature and humidity sensor functionality.
+- Print temperature and humidity values in the Serial Monitor within a specified range.
+- Create a customized temperature and humidity monitoring system.
 
-•	An Arduino Nano 33 BLE Sense board
-•	A Micro USB cable to connect the Arduino board to your desktop machine.
-•	To program the board, I used the  Arduino IDE.
+## Hardware and Software Required
 
-The HTS221 Sensor
+- Arduino Nano 33 BLE Sense board
+- Micro USB cable for connecting the Arduino board to a desktop machine.
+- Arduino IDE for programming the board.
 
-![image](https://user-images.githubusercontent.com/102630199/219319823-46def6b0-f064-4bb6-8f1f-dafbdc17d054.png)
+## The HTS221 Sensor
 
-  
-Temperature sensors are components that convert physical temperature into digital data. Likewise, humidity sensors are able to measure atmospheric moisture levels and translate that into electrical signal. As such, temperature and humidity sensors are essential for environmental monitoring especially in and around sensitive electronic equipment.
-The HTS221 is an ultra-compact sensor for relative humidity and temperature. We will use the I2C protocol to communicate with the sensor and get data from it. The sensor's range of different values are the following:
+![HTS221 Sensor](https://user-images.githubusercontent.com/102630199/219319823-46def6b0-f064-4bb6-8f1f-dafbdc17d054.png)
 
-•	Humidity accuracy: ± 3.5% rH, 20 to +80% rH
-•	Humidity range: 0 to 100 %
-•	Temperature accuracy: ± 0.5 °C,15 to +40 °C
-•	Temperature range: -40 to 120°C
+Temperature and humidity sensors, such as the HTS221, play a crucial role in converting physical temperature and atmospheric moisture levels into digital data. The HTS221 sensor, with its compact design, communicates via the I2C protocol and has the following specifications:
 
-These types of sensors are used more than you would think and are found in various everyday objects! 
-Some of the useful ways they are used are seen in the following applications:
+- Humidity accuracy: ± 3.5% rH, 20 to +80% rH
+- Humidity range: 0 to 100%
+- Temperature accuracy: ± 0.5 °C, 15 to +40 °C
+- Temperature range: -40 to 120°C
 
-•	Air conditioning, heating and ventilation.
-•	Air humidifiers.
-•	Refrigerators.
-•	Wearable devices.
-•	Smart home automation.
-•	Industrial automation.
-•	Respiratory equipment.
-•	Asset and goods tracking.
+Applications of such sensors span across various domains, including air conditioning, wearable devices, smart home automation, industrial automation, and more.
 
-Procedure
+## Procedure
 
-•	Click on the Libraries tab, search for the HTS221 library, then in Examples, open the ReadSensors example. Once the sketch is open, rename it as Temp_Humidity.
+1. Open the Arduino IDE, navigate to the Libraries tab, and find the HTS221 library. Open the ReadSensors example and rename it as Temp_Humidity.
+2. Connect the Arduino Nano 33 BLE Sense to the computer and ensure the Web Editor recognizes it.
 
-•	Now, connect the Arduino Nano 33 BLE Sense to the computer to check that the Web Editor recognizes it,
+## Results
 
+After verifying and uploading the sketch to the board, open the Serial Monitor to view the real-time temperature and humidity values. The values will be displayed as shown below:
 
-Results
+![Temperature and Humidity Values](https://user-images.githubusercontent.com/102630199/219320108-2a79135a-f24a-4502-8df4-5ca1948e0df4.png)
 
-After you have successfully verified and uploaded the sketch to the board, open the Serial Monitor from the menu on the left. You will now see the new values printed as shown below:
-![image](https://user-images.githubusercontent.com/102630199/219320108-2a79135a-f24a-4502-8df4-5ca1948e0df4.png)
+## References
 
+1. [Arduino Nano 33 BLE Sense - Humidity and Temperature Sensor Tutorial](https://docs.arduino.cc/tutorials/nano-33-ble-sense/humidity-and-temperature-sensor)
 
-REFERENCES
-
-[1] https://docs.arduino.cc/tutorials/nano-33-ble-sense/humidity-and-temperature-sensor
+Feel free to reach out for any additional information or assistance!
